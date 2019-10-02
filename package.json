@@ -19,6 +19,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@7span/shilp": "0.1.0-beta.5",
+    "@7span/shilp-vue": "0.1.0-beta.14",
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "material-colors": "^1.2.6",

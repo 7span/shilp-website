@@ -13,6 +13,7 @@ export default {
     CardText: require("@icon/CardText").default,
     Close: require("@icon/Close").default,
     Minus: require("@icon/Minus").default,
-    Alert: require("@icon/Alert").default
+    Alert: require("@icon/Alert").default,
+    ChevronRight: require("@icon/ChevronRight").default
   }
 };

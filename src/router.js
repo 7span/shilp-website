@@ -19,7 +19,21 @@ export default new Router({
         },
         {
           path: "customization",
-          component: require("@/views/Customization").default
+          component: require("@/views/Customization").default,
+          children: [
+            {
+              path: "",
+              component: require("@/views/customization/Index").default
+            },
+            {
+              path: "global-config",
+              component: require("@/views/customization/GlobalConfig").default
+            },
+            {
+              path: "colors",
+              component: require("@/views/customization/Colors").default
+            }
+          ]
         },
         {
           path: "utilities",

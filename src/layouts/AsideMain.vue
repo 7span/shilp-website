@@ -25,6 +25,9 @@
     }
   }
 }
+.content {
+  padding-bottom: --space(xl);
+}
 .content__box {
   display: flex;
   flex: 1 1 auto;
@@ -32,5 +35,6 @@
 }
 .main {
   flex: 1 1 auto;
+  min-width: 0;
 }
 </style>

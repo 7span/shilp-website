@@ -2,14 +2,13 @@
   <aside-main>
     <template v-slot:aside>
       <s-nav class="aside__nav" stack fluid size="sm" align="left">
-        <s-nav-item href="#defaults">Defaults</s-nav-item>
-        <s-nav-item href="#colors">Colors</s-nav-item>
-        <s-nav-item href="#fonts">Fonts</s-nav-item>
+        <s-nav-item to="/customization/global-config">Global Config</s-nav-item>
+        <s-nav-item to="/customization/colors">Colors</s-nav-item>
+        <s-nav-item to="/customization/fonts">Fonts</s-nav-item>
       </s-nav>
     </template>
     <template v-slot:main>
-      <h3>Customization</h3>
-      <pre v-highlightjs><code class="javascript">const s = new Date().toString()</code></pre>
+      <router-view></router-view>
     </template>
   </aside-main>
 </template> 
@@ -17,7 +16,9 @@
 <script>
 export default {
   components: {
-    AsideMain: require("@/layouts/AsideMain").default
+    AsideMain: require("@/layouts/AsideMain").default,
+    GlobalConfig: require("./customization/GlobalConfig").default,
+    Colors: require("./customization/Colors").default
   }
 };
 </script>

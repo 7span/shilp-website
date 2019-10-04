@@ -10,9 +10,9 @@
       <s-button v-for="color in statusColors" :color="color">{{color}}</s-button>
     </div>
 
-    <h3 class="color--grey m--0 mb--xs mt--xl">Grey Buttons</h3>
+    <h3 class="color--grey m--0 mb--xs mt--xl">Neutral Buttons</h3>
     <div class="space space--sm">
-      <s-button v-for="color in greyColors" :color="color">{{color}}</s-button>
+      <s-button v-for="color in neutralColors" :color="color">{{color}}</s-button>
     </div>
 
     <h3 class="color--grey m--0 mb--xs mt--xl">Sizes</h3>
@@ -119,7 +119,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .button {
   text-transform: capitalize;
 }

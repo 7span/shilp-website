@@ -10,48 +10,85 @@ export default new Router({
       component: require("@/layouts/Main").default,
       children: [
         {
-          path: "text",
-          component: require("@/views/demos/Text").default
+          path: "",
+          component: require("@/views/Intro").default
         },
         {
-          path: "button",
-          component: require("@/views/demos/Button").default
+          path: "installation",
+          component: require("@/views/Installation").default
         },
         {
-          path: "blocks",
-          component: require("@/views/demos/Blocks").default
+          path: "customization",
+          component: require("@/views/Customization").default
         },
         {
-          path: "form",
-          component: require("@/views/demos/Form").default
+          path: "utilities",
+          component: require("@/views/Utilities").default
         },
         {
-          path: "spacing",
-          component: require("@/views/demos/Spacing").default
+          path: "style-guide",
+          component: require("@/views/StyleGuide").default,
+          children: [
+            {
+              path: "",
+              redirect: "text"
+            },
+            {
+              path: "text",
+              component: require("@/views/components/Text").default
+            },
+            {
+              path: "colors",
+              component: require("@/views/components/Colors").default
+            }
+          ]
         },
         {
-          path: "space",
-          component: require("@/views/demos/Space").default
-        },
-        {
-          path: "colors",
-          component: require("@/views/demos/Colors").default
-        },
-        {
-          path: "loader",
-          component: require("@/views/demos/Loader").default
-        },
-        {
-          path: "card",
-          component: require("@/views/demos/Card").default
-        },
-        {
-          path: "alert",
-          component: require("@/views/demos/Alert").default
-        },
-        {
-          path: "item",
-          component: require("@/views/demos/Item").default
+          path: "components",
+          component: require("@/views/components/Index").default,
+          children: [
+            {
+              path: "",
+              redirect: "button"
+            },
+            {
+              path: "button",
+              component: require("@/views/components/Button").default
+            },
+            {
+              path: "blocks",
+              component: require("@/views/components/Blocks").default
+            },
+            {
+              path: "form",
+              component: require("@/views/components/Form").default
+            },
+            {
+              path: "spacing",
+              component: require("@/views/components/Spacing").default
+            },
+            {
+              path: "space",
+              component: require("@/views/components/Space").default
+            },
+
+            {
+              path: "loader",
+              component: require("@/views/components/Loader").default
+            },
+            {
+              path: "card",
+              component: require("@/views/components/Card").default
+            },
+            {
+              path: "alert",
+              component: require("@/views/components/Alert").default
+            },
+            {
+              path: "item",
+              component: require("@/views/components/Item").default
+            }
+          ]
         }
       ]
     }

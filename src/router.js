@@ -49,17 +49,17 @@ export default new Router({
             },
             {
               path: "text",
-              component: require("@/views/components/Text").default
+              component: require("@/views/style-guide/Text").default
             },
             {
               path: "colors",
-              component: require("@/views/components/Colors").default
+              component: require("@/views/style-guide/Colors").default
             }
           ]
         },
         {
           path: "components",
-          component: require("@/views/components/Index").default,
+          component: require("@/views/Components").default,
           children: [
             {
               path: "",
@@ -70,12 +70,24 @@ export default new Router({
               component: require("@/views/components/Button").default
             },
             {
+              path: "buttons",
+              component: require("@/views/components/Buttons").default
+            },
+            {
               path: "blocks",
               component: require("@/views/components/Blocks").default
             },
             {
-              path: "form",
-              component: require("@/views/components/Form").default
+              path: "field",
+              component: require("@/views/components/Field").default
+            },
+            {
+              path: "select",
+              component: require("@/views/components/Select").default
+            },
+            {
+              path: "choice",
+              component: require("@/views/components/Choice").default
             },
             {
               path: "spacing",

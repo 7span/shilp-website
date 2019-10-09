@@ -1,7 +1,7 @@
 <template>
   <div class="code-block">
     <div class="code-block__title">{{title}}</div>
-    <pre v-highlightjs><code :class="lang"><slot></slot></code></pre>
+    <pre v-highlightjs="sourceCode"><code :class="lang"><slot></slot></code></pre>
   </div>
 </template>
 
@@ -9,7 +9,13 @@
 export default {
   props: {
     lang: String,
-    title: String
+    title: String,
+    sourceCode: String
+  },
+  computed: {
+    slotData() {
+      return JSON.stringify(this.$slots.default);
+    }
   }
 };
 </script>

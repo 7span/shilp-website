@@ -10,6 +10,7 @@ require("@/scss/style.scss");
 Vue.component("Heading", require("@/components/Heading.vue").default);
 Vue.component("SubHeading", require("@/components/SubHeading.vue").default);
 Vue.component("CodeBlock", require("@/components/CodeBlock.vue").default);
+Vue.component("STable", require("@/components/Table.vue").default);
 
 Vue.mixin({
   data() {
@@ -17,7 +18,7 @@ Vue.mixin({
       brandColors: ["primary", "secondary", "accent"],
       statusColors: ["info", "success", "warning", "danger", "grey"],
       neutralColors: ["grey", "light", "dark"],
-      inputSizes: ["sm", "md", "lg", "xl"]
+      inputSizes: ["xs", "sm", "md", "lg", "xl"]
     };
   }
 });

@@ -1,8 +1,8 @@
 <template>
-  <div class="box">
+  <div class="colors">
+    <heading title="Colors"></heading>
     <div class="color-group" v-for="item in colorGroups">
-      <h3 class="color--grey m--0 mb--xs">{{item.label}}</h3>
-
+      <sub-heading :title="item.label"></sub-heading>
       <s-blocks>
         <s-block v-for="color in item.colors" :key="`color--${color}`">
           <s-blocks gap="0" class="palette">

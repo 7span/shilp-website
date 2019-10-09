@@ -1,7 +1,7 @@
 <template>
   <aside-main>
     <template v-slot:aside>
-      <s-nav class="aside__nav" stack fluid size="sm" align="left">
+      <s-nav class="aside__nav" stack fluid align="left">
         <s-nav-item to="#npm">npm Package</s-nav-item>
         <s-nav-item to="#compiled">Compiled Files</s-nav-item>
       </s-nav>

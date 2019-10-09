@@ -1,7 +1,7 @@
 <template>
   <aside-main>
     <template v-slot:aside>
-      <s-nav class="aside__nav" stack fluid size="sm" align="left">
+      <s-nav class="aside__nav" stack fluid align="left">
         <s-nav-item icon="FormatFont" to="/style-guide/text">Texts</s-nav-item>
         <s-nav-item icon="Palette" to="/style-guide/colors">Colors</s-nav-item>
       </s-nav>

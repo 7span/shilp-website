@@ -1,5 +1,7 @@
 <template>
   <div class="pb--xl">
+    <demo title="Card" name="card" :markup="markup" wrap-preview></demo>
+
     <div class="bg--grey--lightest p--xl">
       <s-blocks>
         <s-block :size="6">
@@ -100,3 +102,38 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      markup: `
+<div class="card shadow--xs card--sm">
+  <!-- header -->
+  <header class="card__header">
+    <h3 class="card__title">Minimal Card</h3>
+    <div class="card__actions">
+      <button class="button button--square">
+        <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="button__icon">
+          <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- body -->
+  <div class="card__body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus eaque atque porro eius accusamus, ea ipsum quo.</p>
+    <p>Officia, maxime aut laborum ullam inventore saepe magni illo assumenda nulla dicta.</p>
+  </div>
+
+  <!-- footer -->
+  <footer class="card__footer">
+    <button class="button button--primary">Open</button>
+    <button class="button ml--xs button--primary button--trn">Next</button>
+  </footer>
+</div>`
+    };
+  }
+};
+</script>

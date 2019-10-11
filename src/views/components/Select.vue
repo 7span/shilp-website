@@ -1,17 +1,5 @@
 <template>
-  <div class="demo demo--select">
-    <heading title="Select"></heading>
-
-    <sub-heading title="Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="markup"></code-block>
-      <s-blocks>
-        <s-block :size="6">
-          <div v-html="markup"></div>
-        </s-block>
-      </s-blocks>
-    </sub-heading>
-  </div>
+  <demo name="select" title="Select" :markup="markup"></demo>
 </template>
 
 <script>

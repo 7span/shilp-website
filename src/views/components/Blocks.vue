@@ -1,13 +1,5 @@
 <template>
-  <div class="demo demo--blocks">
-    <heading title="Blocks"></heading>
-
-    <sub-heading title="Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="markup"></code-block>
-      <div v-html="markup"></div>
-    </sub-heading>
-
+  <demo name="blocks" title="Blocks" :markup="markup">
     <s-blocks>
       <s-block :size="6">
         <sub-heading title=".blocks Modifiers">
@@ -36,7 +28,7 @@
         </div>
       </div>
     </sub-heading>
-  </div>
+  </demo>
 </template>
 
 <script>
@@ -45,10 +37,18 @@ export default {
     return {
       markup: `
 <div class="blocks">
-  <div class="block block--6:phablet block--3:desktop">1</div>
-  <div class="block block--6:phablet block--3:desktop">2</div>
-  <div class="block block--6:phablet block--3:desktop">3</div>
-  <div class="block block--6:phablet block--3:desktop">4</div>
+  <div class="block block--6:phablet block--3:desktop">
+    <div class="bg--grey--lightest">1</div>
+  </div>
+  <div class="block block--6:phablet block--3:desktop">
+    <div class="bg--grey--lighter">2</div>
+  </div>
+  <div class="block block--6:phablet block--3:desktop">
+    <div class="bg--grey--light">3</div>
+  </div>
+  <div class="block block--6:phablet block--3:desktop">
+    <div class="bg--grey">4</div>
+  </div>
 </div>
 `,
       blockModifiers: {

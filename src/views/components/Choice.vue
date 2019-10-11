@@ -1,27 +1,9 @@
 <template>
-  <div class="demo demo--choice">
-    <heading title="Choice">Choice is a common name for Checkboxes and Radio buttons.</heading>
-
-    <sub-heading title="Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="markup"></code-block>
-      <s-blocks>
-        <s-block :size="6">
-          <div v-html="markup"></div>
-        </s-block>
-      </s-blocks>
-    </sub-heading>
-
-    <sub-heading title="Button Style Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="buttonMarkup"></code-block>
-      <s-blocks>
-        <s-block :size="6">
-          <div v-html="buttonMarkup"></div>
-        </s-block>
-      </s-blocks>
-    </sub-heading>
-  </div>
+  <demo name="choice" title="Choice" :markup="markup">
+    <template slot="intro">
+      <p>Choice is a common name for Checkboxes and Radio buttons.</p>
+    </template>
+  </demo>
 </template>
 
 <script>
@@ -29,10 +11,9 @@ export default {
   data() {
     return {
       markup: `
-<!-- radio -->
 <!-- replace type="checkbox" for checkboxes -->
 <div class="field">
-  <label>Choose Your Power</label>
+  <label>Native Radio Buttons</label>
   <div class="field__group">
     <div class="choices space space--md">
       <div class="choice">
@@ -46,12 +27,10 @@ export default {
     </div>
   </div>
 </div>
-`,
-      buttonMarkup: `
-<!-- radio -->
-<!-- replace type="checkbox" for checkboxes -->
-<div class="field">
-  <label>Choose Your Power</label>
+
+<!-- button style -->
+<div class="field mt--xl">
+  <label>Button Style</label>
   <div class="field__group">
     <div class="choices buttons buttons--group">
       <div class="choice choice--custom">

@@ -1,30 +1,33 @@
 <template>
-  <div class="box">
-    <s-blocks>
-      <s-block size="auto" class="bg--primary">
-        <div class="p--xl loader loader--xs"></div>
-      </s-block>
-      <s-block size="auto" class="bg--secondary">
-        <div class="p--xl loader loader--sm"></div>
-      </s-block>
-      <s-block size="auto" class="bg--accent">
-        <div class="p--xl loader loader--md"></div>
-      </s-block>
-      <s-block size="auto" class="bg--info">
-        <div class="p--xl loader loader--lg"></div>
-      </s-block>
-      <s-block size="auto" class="bg--success">
-        <div class="p--xl loader loader--xl"></div>
-      </s-block>
-    </s-blocks>
-  </div>
+  <demo title="Loader" name="loader" :markup="markup">
+    <sub-heading title=".loader Modifiers">
+      <s-table :data="modifiers"></s-table>
+      <p class="mt--sm">Loaders can be used with .field & .button too.</p>
+    </sub-heading>
+  </demo>
 </template>
 
-<style lang="scss">
-.margin-demo {
-  background-color: #dadada;
-}
-</style>
+<script>
+export default {
+  data() {
+    return {
+      markup: `
+<div class="loader loader--light bg--primary p--xl">
+  <span class="color--light">This is loading! Please Wait...</span>
+</div>
+`
+    };
+  },
+  computed: {
+    modifiers() {
+      return {
+        Sizes: ["xs", "sm", "md", "lg", "xl"],
+        Color: ["light", "dark"]
+      };
+    }
+  }
+};
+</script>
 
 
 

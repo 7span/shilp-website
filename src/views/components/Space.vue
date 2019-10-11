@@ -1,21 +1,35 @@
 <template>
-  <div class="box">
-    <s-buttons class="space space--xs space--xl:desktop">
-      <s-button color="primary">Hi</s-button>
-      <s-button color="primary">How</s-button>
-      <s-button color="primary">Are</s-button>
-      <s-button color="primary">You?</s-button>
-    </s-buttons>
-    <br />
-    <s-buttons class="space space--stack space--reverse space--xl:desktop">
-      <s-button color="secondary">I</s-button>
-      <s-button color="secondary">Am</s-button>
-      <s-button color="secondary">Fine!</s-button>
-    </s-buttons>
-  </div>
+  <demo title="Space" name="space" :markup="markup">
+    <sub-heading title=".space Modifiers">
+      <s-table :data="modifiers"></s-table>
+      <p class="mt--sm">Breakpoint modifiers are supported with each modifiers.</p>
+    </sub-heading>
+  </demo>
 </template>
 
-<style lang="scss">
-</style>
+<script>
+export default {
+  data() {
+    return {
+      markup: `
+<div class="space space--sm space--xl:desktop">
+  <button class="button button--primary">Fire</button>
+  <button class="button button--primary">Wood</button>
+  <button class="button button--primary">Water</button>
+  <button class="button button--primary">Earth</button>
+</div>
+`
+    };
+  },
+  computed: {
+    modifiers() {
+      return {
+        Sizes: ["0", "xxs", "xs", "sm", "md", "lg", "xl", "auto"],
+        Other: ["reverse", "stack"]
+      };
+    }
+  }
+};
+</script>
 
 

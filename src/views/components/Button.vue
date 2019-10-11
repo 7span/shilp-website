@@ -1,12 +1,6 @@
 <template>
-  <div class="demo demo--button">
-    <heading title="Button"></heading>
-
-    <sub-heading title="Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="markup"></code-block>
-      <div v-html="markup"></div>
-    </sub-heading>
+  <demo name="button" title="Button" :markup="markup">
+    <template slot="intro"></template>
 
     <sub-heading title=".button Modifiers">
       <s-table :data="modifiers"></s-table>
@@ -96,7 +90,7 @@
         </s-buttons>
       </div>
     </sub-heading>
-  </div>
+  </demo>
 </template>
 
 <script>

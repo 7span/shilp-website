@@ -1,17 +1,5 @@
 <template>
-  <div class="demo demo--field">
-    <heading title="Field"></heading>
-
-    <sub-heading title="Markup">
-      <!-- prettyhtml-ignore -->
-      <code-block lang="html" :sourceCode="markup"></code-block>
-      <s-blocks>
-        <s-block :size="6">
-          <div v-html="markup"></div>
-        </s-block>
-      </s-blocks>
-    </sub-heading>
-
+  <demo name="blocks" title="Blocks" :markup="markup">
     <s-blocks>
       <s-block :size="6">
         <sub-heading title=".field Modifiers">
@@ -24,7 +12,11 @@
         </sub-heading>
       </s-block>
     </s-blocks>
-  </div>
+
+    <s-field size="lg" label="File">
+      <s-file color="primary" multiple placeholder="Select File..." button-label="Select Files"></s-file>
+    </s-field>
+  </demo>
 </template>
 
 <script>

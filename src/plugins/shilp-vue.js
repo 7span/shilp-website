@@ -8,7 +8,7 @@ export default {
     PanHorizontal: require("@icon/PanHorizontal").default,
     Palette: require("@icon/Palette").default,
     CheckCircle: require("@icon/CheckCircle").default,
-    Loading: require("@icon/Loading").default,
+    ProgressClock: require("@icon/ProgressClock").default,
     AlphaSCircle: require("@icon/AlphaSCircle").default,
     CardText: require("@icon/CardText").default,
     Close: require("@icon/Close").default,
@@ -18,6 +18,7 @@ export default {
     ViewStream: require("@icon/ViewStream").default,
     ArrowDownDropCircle: require("@icon/ArrowDownDropCircle").default,
     ViewList: require("@icon/ViewList").default,
-    CheckboxMarked: require("@icon/CheckboxMarked").default
+    CheckboxMarked: require("@icon/CheckboxMarked").default,
+    File: require("@icon/File").default
   }
 };

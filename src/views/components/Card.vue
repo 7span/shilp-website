@@ -111,7 +111,11 @@ export default {
 <div class="card shadow--xs card--sm">
   <!-- header -->
   <header class="card__header">
-    <h3 class="card__title">Minimal Card</h3>
+    <!-- <h3 class="card__title">Minimal Card</h3> -->
+    <div class="card__title">
+      <h4>Hello!</h4>
+      <p>Lorem ispum dorem dolor sit</p>
+    </div>
     <div class="card__actions">
       <button class="button button--square">
         <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="button__icon">

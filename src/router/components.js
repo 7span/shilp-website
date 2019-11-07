@@ -4,8 +4,9 @@ export default [
     redirect: "button"
   },
   {
-    path: "button",
-    component: require("@/views/components/Button").default
+    path: ":name",
+    component: require("@/components/Demo").default,
+    props: true
   },
   {
     path: "buttons",

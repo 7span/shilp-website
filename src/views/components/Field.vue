@@ -13,8 +13,8 @@
       </s-block>
     </s-blocks>
 
-    <s-field size="lg" label="File">
-      <s-file color="primary" multiple placeholder="Select File..." button-label="Select Files"></s-file>
+    <s-field label="Password" :password-toggle="{visibleIcon:'Eye',hiddenIcon:'EyeOff'}">
+      <s-textbox v-model="form.password" type="password"></s-textbox>
     </s-field>
   </demo>
 </template>
@@ -23,6 +23,9 @@
 export default {
   data() {
     return {
+      form: {
+        password: null
+      },
       markup: `
 <div class="field">
   <label>Email</label>

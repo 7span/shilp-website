@@ -1,6 +1,6 @@
 <template>
   <div class="code-block">
-    <div class="code-block__title">{{title}}</div>
+    <div v-if="title" class="code-block__title">{{title}}</div>
     <pre v-highlightjs="sourceCode"><code :class="lang"><slot></slot></code></pre>
   </div>
 </template>

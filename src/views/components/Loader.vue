@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       markup: `
-<div class="loader loader--light bg--primary p--xl">
+<div class="loader bg--primary p--xl">
   <span class="color--light">This is loading! Please Wait...</span>
 </div>
 `

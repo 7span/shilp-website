@@ -19,7 +19,7 @@
       </s-nav>
     </template>
     <template v-slot:main>
-      <router-view></router-view>
+      <router-view :key="component" @change="component=$event"></router-view>
     </template>
   </aside-main>
 </template>
@@ -28,6 +28,11 @@
 export default {
   components: {
     AsideMain: require("@/layouts/AsideMain").default
+  },
+  data() {
+    return {
+      component: null
+    };
   }
 };
 </script>

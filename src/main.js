@@ -13,17 +13,6 @@ Vue.component("CodeBlock", require("@/components/CodeBlock.vue").default);
 Vue.component("STable", require("@/components/Table.vue").default);
 Vue.component("Demo", require("@/components/Demo.vue").default);
 
-Vue.mixin({
-  data() {
-    return {
-      brandColors: ["primary", "secondary", "accent"],
-      statusColors: ["info", "success", "warning", "danger", "grey"],
-      neutralColors: ["grey", "light", "dark"],
-      inputSizes: ["xs", "sm", "md", "lg", "xl"]
-    };
-  }
-});
-
 Vue.config.productionTip = false;
 new Vue({
   router,

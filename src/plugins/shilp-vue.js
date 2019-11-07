@@ -1,5 +1,7 @@
 export default {
   vueMaterialDesignIcons: {
+    Vuejs: require("@icon/Vuejs").default,
+    LanguageHtml5: require("@icon/LanguageHtml5").default,
     FormatFont: require("@icon/FormatFont").default,
     TableRow: require("@icon/TableRow").default,
     Textbox: require("@icon/Textbox").default,
@@ -19,6 +21,10 @@ export default {
     ArrowDownDropCircle: require("@icon/ArrowDownDropCircle").default,
     ViewList: require("@icon/ViewList").default,
     CheckboxMarked: require("@icon/CheckboxMarked").default,
-    File: require("@icon/File").default
+    File: require("@icon/File").default,
+    EyeOff: require("@icon/EyeOff").default,
+    Eye: require("@icon/Eye").default,
+    Menu: require("@icon/Menu").default,
+    Email: require("@icon/Email").default
   }
 };

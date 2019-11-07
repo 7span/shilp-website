@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       markup: `
-<div class="blocks">
+<div class="blocks blocks--xs blocks--lg:desktop">
   <div class="block block--6:phablet block--3:desktop">
     <div class="bg--grey--lightest">1</div>
   </div>

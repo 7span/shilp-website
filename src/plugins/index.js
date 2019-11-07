@@ -14,3 +14,14 @@ if (process.env.VUE_APP_ENV == "production") {
  */
 import VueHighlightJS from "vue-highlightjs";
 Vue.use(VueHighlightJS);
+
+/**
+ * V Tooltip
+ */
+import VTooltip from "v-tooltip";
+Vue.use(VTooltip, {
+  defaultClass: "shilp-tooltip",
+  popover: {
+    defaultClass: "shilp-popover"
+  }
+});

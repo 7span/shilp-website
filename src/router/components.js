@@ -9,20 +9,8 @@ export default [
     props: true
   },
   {
-    path: "buttons",
-    component: require("@/views/components/Buttons").default
-  },
-  {
-    path: "blocks",
-    component: require("@/views/components/Blocks").default
-  },
-  {
     path: "field",
     component: require("@/views/components/Field").default
-  },
-  {
-    path: "select",
-    component: require("@/views/components/Select").default
   },
   {
     path: "choice",

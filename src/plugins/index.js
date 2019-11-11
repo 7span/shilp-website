@@ -1,5 +1,6 @@
 import Vue from "vue";
-
+import axios from "./axios";
+Vue.prototype.$axios = axios;
 /**
  * Import 7Span plugins conditionally.
  */

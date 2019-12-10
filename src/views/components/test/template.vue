@@ -1,7 +1,13 @@
 <template>
-  <s-field label="Select Job">
-    <s-select :options="options" :request="request"></s-select>
-  </s-field>
+  <div class="test">
+    <div class="list list--sm">
+      <s-button color="primary">Hello</s-button>
+      <s-button color="primary">How Are You?</s-button>
+    </div>
+    <s-field label="Select Job">
+      <s-select :options="options" :request="request"></s-select>
+    </s-field>
+  </div>
 </template>
 
 <script>
